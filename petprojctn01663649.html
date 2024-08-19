@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookshelf </title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1 id="header">My BookShelf</h1>
+        <h2>Add Book</h2>
+        <form id="bookForm">    <!--  Form to add new books -->
+            <label for="title" class="book-label">Book Title (required):</label>
+            <input type="text" id="title" class="book-input-title" placeholder="Enter book title" required>
+            <input type="submit" value="Add Book">
+        </form>
+        <div class="book-list-container">
+            <div class="book-list">
+                <h2>To Be Read</h2>
+                <ul id="toBeReadList"></ul> <!--  Hold books to be read -->
+            </div>
+            <div class="book-list">
+                <h2>Currently Reading</h2>
+                <ul id="readingList"></ul> <!--  Hold books currently being read -->
+            </div>
+            <div class="book-list">
+                <h2>Read Books</h2>
+                <ul id="readList"></ul> <!--  Hold readed book titles -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
